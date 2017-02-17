@@ -1,3 +1,3 @@
-import UEditor from './components/UEditor.vue'
+import UEditor from './components/UEditor.vue';
 
-export default UEditor
+export default UEditor;

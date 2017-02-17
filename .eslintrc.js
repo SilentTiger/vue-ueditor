@@ -17,6 +17,13 @@ module.exports = {
   ],
   // add your custom rules here
   'rules': {
+    // 强制要求两个空格缩进
+    "indent": ["error", 2, {
+      "SwitchCase": 1,
+      "VariableDeclarator": 2
+    }],
+    // 语句末尾必须有分号结尾
+    semi: ["error", "always"],
     // allow paren-less arrow functions
     'arrow-parens': 0,
     // allow async-await
