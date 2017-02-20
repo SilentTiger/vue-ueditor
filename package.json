@@ -1,6 +1,6 @@
 {
   "name": "vue-ueditor",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "a wrapper of UEditor for vue 2.x",
   "author": "津玮<cia.fbi.007@hotmail.com>",
   "repository": {
