@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'vue-editor',
+  name: 'VueUEditor',
   props: {
     ueditorPath: {
       // UEditor 代码的路径

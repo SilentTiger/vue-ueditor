@@ -1,6 +1,6 @@
 {
   "name": "vue-ueditor",
-  "version": "1.0.0",
+  "version": "0.1.1",
   "description": "a wrapper of UEditor for vue 2.x",
   "author": "津玮<cia.fbi.007@hotmail.com>",
   "repository": {
@@ -18,7 +18,7 @@
     "lint": "eslint --ext .js,.vue src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "main": "./src/index.js",
+  "main": "./dist/vue-ueditor.js",
   "dependencies": {
   },
   "devDependencies": {

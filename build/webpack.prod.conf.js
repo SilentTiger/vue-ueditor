@@ -9,9 +9,7 @@ base.entry = {
 base.output = {
   path: config.build.assetsRoot,
   publicPath: config.build.assetsPublicPath,
-  filename: 'vue-ueditor.js',
-  library: 'VueSelect',
-  libraryTarget: 'umd'
+  filename: 'vue-ueditor.js'
 }
 
 var webpackConfig = Object.assign({}, base)
