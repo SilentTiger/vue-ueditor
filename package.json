@@ -3,14 +3,23 @@
   "version": "1.0.0",
   "description": "a wrapper of UEditor for vue 2.x",
   "author": "津玮<cia.fbi.007@hotmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SilentTiger/vue-ueditor.git"
+  },
+  "homepage": "https://github.com/SilentTiger/vue-ueditor#readme",
+  "bugs": {
+    "url": "https://github.com/SilentTiger/vue-ueditor/issues"
+  },
   "private": false,
   "scripts": {
     "dev": "node build/dev-server.js",
     "build": "node build/build.js",
-    "lint": "eslint --ext .js,.vue src"
+    "lint": "eslint --ext .js,.vue src",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "main": "./src/index.js",
   "dependencies": {
-    "vue": "^2.1.10"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.2",
@@ -45,6 +54,7 @@
     "ora": "^1.1.0",
     "shelljs": "^0.7.6",
     "url-loader": "^0.5.7",
+    "vue": "^2.1.10",
     "vue-loader": "^10.3.0",
     "vue-style-loader": "^2.0.0",
     "vue-template-compiler": "^2.1.10",
@@ -56,5 +66,9 @@
   "engines": {
     "node": ">= 4.0.0",
     "npm": ">= 3.0.0"
-  }
+  },
+  "keywords": [
+    "vue",
+    "ueditor"
+  ]
 }

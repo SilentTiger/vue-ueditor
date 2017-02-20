@@ -4,6 +4,7 @@
 
 <script>
 export default {
+  name: 'vue-editor',
   props: {
     ueditorPath: {
       // UEditor 代码的路径
@@ -20,7 +21,7 @@ export default {
   },
   data () {
     return {
-      // 为了避免麻烦，每个编辑器实例都用不用的 id
+      // 为了避免麻烦，每个编辑器实例都用不同的 id
       randomId: 'editor_' + (Math.random() * 100000000000000000),
       instance: null,
       // scriptTagStatus -> 0:代码未加载，1:两个代码依赖加载了一个，2:两个代码依赖都已经加载完成
