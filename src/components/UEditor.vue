@@ -17,6 +17,17 @@ export default {
       default: function () {
         return {};
       }
+    },
+    value: {
+      type: String,
+      default: ''
+    }
+  },
+  watch: {
+    'value': function (newVal, oldVal) {
+      if (this.instance && newVal !== this.instance.getContent()) {
+        this.instance.setContent(newVal);
+      }
     }
   },
   data () {
@@ -94,6 +105,10 @@ export default {
           // 绑定事件，当 UEditor 初始化完成后，将编辑器实例通过自定义的 ready 事件交出去
           this.instance.addListener('ready', () => {
             this.$emit('ready', this.instance);
+          });
+          // 监听编辑器内容变化，将编辑器的值set至model
+          this.instance.addListener('contentChange', () => {
+            this.$emit('input', this.instance.getContent());
           });
         });
       }
