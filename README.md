@@ -49,7 +49,7 @@ a wrapper of UEditor for vue 2.x
 
 最后，提醒一点，如果你在同一个页面中使用了多个编辑器，那么你可能会发现有时候其中的一些编辑器无法正确的被初始化。这时你可以考虑是不是因为你没有正确的使用 key 属性。相关知识请参考 vue 的 API 文档。
 
-##FAQ
+## FAQ
 最后，如果你在使用过程中发现什么问题，麻烦先去 [这里](https://github.com/SilentTiger/vue-ueditor/issues?q=is%3Aissue+is%3Aclosed) 瞄一瞄。
 
 ## Lisence
