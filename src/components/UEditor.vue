@@ -5,6 +5,11 @@
 <script>
 export default {
   name: 'VueUEditor',
+  // 添加model，支持v-model指令
+  model: {
+    prop: 'content',
+    event: 'changeContent'
+  },
   props: {
     ueditorPath: {
       // UEditor 代码的路径
@@ -17,6 +22,10 @@ export default {
       default: function () {
         return {};
       }
+    },
+    content: {
+      type: String,
+      default: ''
     }
   },
   data () {
@@ -94,6 +103,16 @@ export default {
           // 绑定事件，当 UEditor 初始化完成后，将编辑器实例通过自定义的 ready 事件交出去
           this.instance.addListener('ready', () => {
             this.$emit('ready', this.instance);
+            // v-model指令初始化内容
+            if (this.content) {
+              this.instance.setContent(this.content);
+            }
+          });
+          // v-model指令更新内容
+          this.instance.addListener('contentChange', () => {
+            let ct = this.instance.getContent();
+            console.log(ct);
+            this.$emit('changeContent', ct);
           });
         });
       }
