@@ -19,8 +19,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "main": "./src/index.js",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^6.7.2",
     "babel-core": "^6.22.1",
