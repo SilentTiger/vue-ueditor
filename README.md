@@ -49,6 +49,14 @@ a wrapper of UEditor for vue 2.x
 
 最后，提醒一点，如果你在同一个页面中使用了多个编辑器，那么你可能会发现有时候其中的一些编辑器无法正确的被初始化。这时你可以考虑是不是因为你没有正确的使用 key 属性。相关知识请参考 vue 的 API 文档。
 
+## Update
+
+因为使用v-model功能Ueditor的焦点会出现一些bug，所以如果需要实现类似v-model功能，可传入 defaultMsg 参数，然后，在提交表单时执行获取富文本内容的方法。
+
+1. 给 `Ueditor` 指定一个 `ref`
+2. 传入 `defaultMsg` 参数，如果这个 `data` 发生变动，则会自动同步 `UEditor` 中的内容
+3. 提交表单时，获取内容即可
+
 ## FAQ
 最后，如果你在使用过程中发现什么问题，麻烦先去 [这里](https://github.com/SilentTiger/vue-ueditor/issues?q=is%3Aissue+is%3Aclosed) 还有 [这里](https://github.com/SilentTiger/vue-ueditor/pulls?utf8=%E2%9C%93&q=) 瞄一瞄。
 
